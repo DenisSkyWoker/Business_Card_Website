@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жесть и Лак — Кузовной ремонт и покраска авто</title>
+    <meta name="description" content="Профессиональный кузовной ремонт любой сложности. Покраска в камере. Гарантия на работы.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Мобильное меню -->
+<div class="mobile-menu">
+    <div class="mobile-menu__container">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__text">Кузовной ремонт и покраска</div>
+            <div class="mobile-menu__contact">
+                <a href="https://yandex.ru/maps/?ll=73.364736%2C54.973114&z=16" target="_blank" rel="noopener" class="header-item" title="Открыть карту">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><b>г. Омск</b><br>ул. 3-я Островская, стр. 2А, корп. 5</p>
+                </a>
+                <div class="header-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Пн-Вс <b>10:00 - 20:00</b></p>
+                </div>
+            </div>
+            <a class="mobile-menu__btn btn" href="#booking">Записаться</a>
+        </div>
+        <div class="mobile-menu__bottom">
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#gallery">Работы</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Шапка -->
+<header class="header">
+    <div class="container">
+        <div class="header-list">
+            <a class="header-logo" href="/">
+                <div class="logo-wrapper">
+                    <div class="logo-icon">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">ЖЕСТЬ</span>
+                        <span class="logo-divider">&</span>
+                        <span class="logo-main">ЛАК</span>
+                    </div>
+                    <div class="logo-tagline">Кузовной центр</div>
+                </div>
+            </a>
+            <div class="header-right">
+                <div class="header-top">
+                    <div class="contact-group">
+                        <a href="https://yandex.ru/maps/?ll=73.364736%2C54.973114&z=16" target="_blank" rel="noopener" class="contact-item" title="Открыть карту">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">г. Омск</span>
+                                <span class="contact-value">ул. 3-я Островская, стр. 2А, корп. 5</span>
+                            </div>
+                        </a>
+                        <div class="contact-divider"></div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Режим работы</span>
+                                <span class="contact-value">Пн-Вс 10:00 - 20:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-group">
+                        <a class="header-phone" href="tel:+79047915220" data-contact-modal>
+                            <span class="phone-label">Есть вопрос?</span>
+                            <span class="phone-number">+7 (904) 791-52-20</span>
+                        </a>
+                        <div class="header-messager">
+                            <a class="header-messager__item whatsapp" href="https://wa.me/79047915220" target="_blank" rel="noopener" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a class="header-messager__item telegram" href="https://t.me/Abramo180" target="_blank" rel="noopener" title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a class="header-messager__item avito" href="https://www.avito.ru/brands/7bbd0d591cdbe6ed0c6bbd0128ad464f?src=sharing" target="_blank" rel="noopener" title="Авито">
+                                <i class="fas fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav class="header-nav">
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#services" class="root-item">
+                                    <span>Услуги</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#services">Покраска авто</a></li>
+                                    <li><a href="#services">Рихтовка и правка</a></li>
+                                    <li><a href="#services">Замена деталей</a></li>
+                                    <li><a href="#services">Полировка</a></li>
+                                    <li><a href="#services">Диагностика кузова</a></li>
+                                    <li><a href="#services">Антикор обработка</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#team">Команда</a></li>
+                            <li><a href="#gallery">Работы</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header-btn btn" data-contact-modal>
+                        <span>Заказать звонок</span>
+                        <i class="fas fa-phone-alt"></i>
+                    </button>
+                </div>
+                <div class="header-burger">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Главный экран -->
+<main class="main">
+    <img src="bg-garage/bg-garage.jpg" class="main-bg" alt="Кузовной ремонт" loading="eager">
+    <div class="container">
+        <h1 class="main-title">ПРОФЕССИОНАЛЬНЫЙ КУЗОВНОЙ РЕМОНТ</h1>
+        <p class="main-subtitle">Восстановим ваш автомобиль после ДТП любой сложности. Покраска в камере. Гарантия на работы.</p>
+        <div class="main-buttons">
+            <a class="main-btn btn" href="#booking">Записаться в СТО</a>
+            <a class="main-btn btn-border" href="#services">Наши услуги</a>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse"><div class="wheel"></div></div>
+        <p>Листайте вниз</p>
+    </div>
+</main>
+
+<!-- Преимущества -->
+<section class="benefits">
+    <div class="container">
+        <div class="benefits-list">
+            <div class="benefits-item fade-in">
+                <div class="benefits-icon"><i class="fas fa-ruble-sign"></i></div>
+                <div class="benefits-item__text"><b>Низкие</b> цены</div>
+            </div>
+            <div class="benefits-item fade-in">
+                <div class="benefits-icon"><i class="fas fa-user-cog"></i></div>
+                <div class="benefits-item__text"><b>Опытный</b> персонал</div>
+            </div>
+            <div class="benefits-item fade-in">
+                <div class="benefits-icon"><i class="fas fa-tools"></i></div>
+                <div class="benefits-item__text"><b>Современное</b> оборудование</div>
+            </div>
+            <div class="benefits-item fade-in">
+                <div class="benefits-icon"><i class="fas fa-couch"></i></div>
+                <div class="benefits-item__text"><b>Зона комфорта</b> для клиентов</div>
+            </div>
+            <div class="benefits-item fade-in">
+                <div class="benefits-icon"><i class="fas fa-boxes"></i></div>
+                <div class="benefits-item__text"><b>Свой склад</b> запчастей</div>
+            </div>
+            <div class="benefits-item fade-in">
+                <div class="benefits-icon"><i class="fas fa-certificate"></i></div>
+                <div class="benefits-item__text"><b>Гарантия</b> на работы</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Услуги -->
+<section class="home-services" id="services">
+    <div class="container">
+        <h2 class="title white fade-in">Наши услуги</h2>
+        <div class="section-divider white"></div>
+        <div class="home-services__list">
+            <div class="home-services__item fade-in">
+                <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+                <p>Покраска авто</p>
+            </div>
+            <div class="home-services__item fade-in">
+                <div class="service-icon"><i class="fas fa-hammer"></i></div>
+                <p>Рихтовка и правка</p>
+            </div>
+            <div class="home-services__item fade-in">
+                <div class="service-icon"><i class="fas fa-car-crash"></i></div>
+                <p>Замена деталей</p>
+            </div>
+            <div class="home-services__item fade-in">
+                <div class="service-icon"><i class="fas fa-gem"></i></div>
+                <p>Полировка</p>
+            </div>
+            <div class="home-services__item fade-in">
+                <div class="service-icon"><i class="fas fa-search"></i></div>
+                <p>Диагностика кузова</p>
+            </div>
+            <div class="home-services__item fade-in">
+                <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                <p>Антикор обработка</p>
+            </div>
+        </div>
+        <div class="home-services__bottom fade-in">
+            <div class="home-services__text"><b>Не нашли то что искали?</b><br>Позвоните нам</div>
+            <button class="home-services__btn btn" data-contact-modal>
+                <i class="fas fa-phone-alt"></i>
+                <span>+7 (904) 791-52-20</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Статистика -->
+<section class="stats-section" id="about">
+    <div class="stats-bg"></div>
+    <div class="container">
+        <h2 class="title white fade-in">Почему Жесть и Лак?</h2>
+        <div class="section-divider white"></div>
+        <div class="stats-grid">
+            <div class="stat-item fade-in">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">лет опыта</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number" data-target="100">0</span>
+                <span class="stat-label">авто отремонтировано</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number" data-target="1">0</span>
+                <span class="stat-label">год гарантии</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number" data-target="100">0</span>
+                <span class="stat-label">% довольных клиентов</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Бренды -->
+<section class="brands">
+    <div class="container">
+        <h2 class="title white fade-in">РАБОТАЕМ С АВТОМОБИЛЯМИ ЛЮБЫХ МАРОК</h2>
+        <div class="section-divider white"></div>
+        <div class="brands-list fade-in">
+            <a class="brands-item" href="#">Toyota</a>
+            <a class="brands-item" href="#">BMW</a>
+            <a class="brands-item" href="#">Mercedes</a>
+            <a class="brands-item" href="#">Audi</a>
+            <a class="brands-item" href="#">Volkswagen</a>
+            <a class="brands-item" href="#">Nissan</a>
+            <a class="brands-item" href="#">Honda</a>
+            <a class="brands-item" href="#">Kia</a>
+            <a class="brands-item" href="#">Hyundai</a>
+            <a class="brands-item" href="#">Lexus</a>
+            <a class="brands-item" href="#">Mazda</a>
+            <a class="brands-item" href="#">Ford</a>
+        </div>
+    </div>
+</section>
+
+<!-- Команда -->
+<section class="team-section" id="team">
+    <div class="container">
+        <h2 class="title white fade-in">Наши мастера</h2>
+        <div class="section-divider white"></div>
+        <p class="section-subtitle white fade-in">Профессионалы с опытом работы от 5 лет</p>
+        <div class="team-grid">
+            <div class="team-card fade-in">
+                <div class="team-photo"><i class="fas fa-user-mechanic"></i></div>
+                <h3>Антон</h3>
+                <p class="team-role">Руководитель. Старший мастер</p>
+                <p class="team-exp">15 лет опыта</p>
+            </div>
+            <div class="team-card fade-in">
+                <div class="team-photo"><i class="fas fa-user-mechanic"></i></div>
+                <h3>Олег</h3>
+                <p class="team-role">Жестянщик</p>
+                <p class="team-exp">40 лет опыта</p>
+            </div>
+            <div class="team-card fade-in">
+                <div class="team-photo"><i class="fas fa-user-mechanic"></i></div>
+                <h3>Александр</h3>
+                <p class="team-role">Маляр</p>
+                <p class="team-exp">30 лет опыта</p>
+            </div>
+            <div class="team-card fade-in">
+                <div class="team-photo"><i class="fas fa-user-mechanic"></i></div>
+                <h3>Иван</h3>
+                <p class="team-role">Мастер-приёмщик</p>
+                <p class="team-exp">15 лет опыта</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Галерея -->
+<section class="gallery-section" id="gallery">
+    <div class="container">
+        <h2 class="title white fade-in">Примеры работ</h2>
+        <div class="section-divider white"></div>
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in">
+                <img src="bg-garage/gallery/work-1.png" alt="Восстановление после ДТП" loading="lazy">
+                <div class="gallery-caption">Восстановление после ДТП</div>
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="bg-garage/gallery/work-2.png" alt="Геометрия кузова" loading="lazy">
+                <div class="gallery-caption">Геометрия кузова</div>
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="bg-garage/gallery/work-3.png" alt="Кузовной ремонт и покраска" loading="lazy">
+                <div class="gallery-caption">Кузовной ремонт и покраска</div>
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="bg-garage/gallery/work-4.png" alt="Устранение сложных повреждений" loading="lazy">
+                <div class="gallery-caption">Устранение сложных повреждений</div>
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="bg-garage/gallery/work-5.png" alt="Полное восстановление авто" loading="lazy">
+                <div class="gallery-caption">Полное восстановление авто</div>
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="bg-garage/gallery/work-6.png" alt="Качество гарантировано" loading="lazy">
+                <div class="gallery-caption">Качество гарантировано</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Отзывы -->
+<section class="home-reviews" id="reviews">
+    <div class="container">
+        <div class="home-reviews__wrapper">
+            <h2 class="title white fade-in">Отзывы клиентов</h2>
+            <div class="section-divider white"></div>
+            <div class="home-reviews__slider swiper fade-in">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="home-reviews__item">
+                            <div class="reviews-item__top">
+                                <div class="reviews-item__title">Павел К.</div>
+                                <div class="reviews-item__stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="reviews-item__text">Лучший сервис в этом районе, адекватные цены, отличное обслуживание, приветливый персонал и грамотные специалисты. Рекомендую однозначно!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-reviews__item">
+                            <div class="reviews-item__top">
+                                <div class="reviews-item__title">Анастасия П.</div>
+                                <div class="reviews-item__stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="reviews-item__text">Самый лучший сервис! Делаю тут свой мерседес, отлично разбираются в электронике, хорошие цены, прекрасное обслуживание!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-reviews__item">
+                            <div class="reviews-item__top">
+                                <div class="reviews-item__title">Сергей В.</div>
+                                <div class="reviews-item__stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="reviews-item__text">Профессиональный подход. Машина как новая, гарантия на работу. Буду обращаться ещё.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-reviews__item">
+                            <div class="reviews-item__top">
+                                <div class="reviews-item__title">Максим П.</div>
+                                <div class="reviews-item__stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="reviews-item__text">Быстро, качественно, по разумной цене. Спасибо команде!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-reviews__arrows">
+                    <div class="home-reviews__arrow home-reviews__prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="home-reviews__arrow home-reviews__next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Онлайн-запись -->
+<section class="booking-section" id="booking">
+    <div class="booking-bg"></div>
+    <div class="container">
+        <h2 class="title white fade-in">Онлайн-запись</h2>
+        <div class="section-divider white"></div>
+        <p class="section-subtitle white fade-in">Запишитесь на удобное время за 1 минуту</p>
+        <form class="booking-form fade-in" id="bookingForm" enctype="multipart/form-data">
+            <label>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+            </label>
+            <label>
+                <input type="text" name="car" placeholder="Марка и модель авто" required>
+            </label>
+            <div class="form-row">
+                <label>
+                    <input type="date" name="date" required>
+                </label>
+                <label>
+                    <input type="time" name="time" required>
+                </label>
+            </div>
+            <label>
+                <select name="service" required>
+                    <option value="" disabled selected>Выберите услугу</option>
+                    <option value="Покраска">Покраска</option>
+                    <option value="Кузовной ремонт">Кузовной ремонт</option>
+                    <option value="Полировка">Полировка</option>
+                    <option value="Диагностика">Диагностика</option>
+                    <option value="Другое">Другое</option>
+                </select>
+            </label>
+            <div class="file-upload-wrapper">
+                <label for="photoInput" class="file-upload-label">
+                    <i class="fas fa-camera"></i> Прикрепить фото повреждения
+                </label>
+                <input type="file" id="photoInput" name="photo" accept="image/*" class="file-input">
+                <div class="file-name" id="fileName">Файл не выбран</div>
+            </div>
+            <button type="submit" class="btn">Записаться</button>
+        </form>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <h2 class="title white fade-in">Частые вопросы</h2>
+        <div class="section-divider white"></div>
+        <div class="faq-grid">
+            <div class="faq-item fade-in">
+                <div class="faq-item__title">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Сколько времени занимает ремонт?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-item__text">
+                    <p>От 1 дня до 2 недель, зависит от сложности. Точные сроки назовём после осмотра.</p>
+                </div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-item__title">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Есть ли гарантия на работы?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-item__text">
+                    <p>Да, даём гарантию до 1 года на лакокрасочное покрытие и сварочные работы.</p>
+                </div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-item__title">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Можно ли присутствовать при ремонте?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-item__text">
+                    <p>Да, вы можете посетить сервис в рабочее время и посмотреть на процесс.</p>
+                </div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-item__title">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Как узнать точную стоимость?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-item__text">
+                    <p>Пришлите фото повреждений в WhatsApp или запишитесь на бесплатный осмотр.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section class="home-contact" id="contacts">
+    <div class="container">
+        <div class="home-contact__wrapper">
+            <h2 class="title white fade-in">Наши контакты</h2>
+            <div class="section-divider white"></div>
+            <div class="home-contact__items">
+                <div class="home-contact__item fade-in">
+                    <div class="home-contact__item-title">Адрес</div>
+                    <div class="home-contact__item-text">
+                        <a href="https://yandex.ru/maps/?ll=73.364736%2C54.973114&z=16" target="_blank" rel="noopener" title="Открыть карту">
+                            <b>г. Омск</b>, ул. 3-я Островская, стр. 2А, корп. 5
+                            <i class="fas fa-external-link-alt" style="margin-left: 8px; font-size: 0.8em; opacity: 0.6;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-contact__item fade-in">
+                    <div class="home-contact__item-title">Телефон</div>
+                    <div class="home-contact__item-text">
+                        <a href="tel:+79047915220" data-contact-modal><b>+7 (904) 791-52-20</b></a>
+                    </div>
+                </div>
+                <div class="home-contact__item fade-in">
+                    <div class="home-contact__item-title">Электронная почта</div>
+                    <div class="home-contact__item-text">
+                        <a href="mailto:olgaivanova1310@yandex.ru">olgaivanova1310@yandex.ru</a>
+                    </div>
+                </div>
+                <div class="home-contact__item fade-in">
+                    <div class="home-contact__item-title">Мессенджеры</div>
+                    <div class="home-contact__item-soc">
+                        <a href="https://wa.me/79047915220" target="_blank" rel="noopener" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/Abramo180" target="_blank" rel="noopener" title="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://vk.ru/id698782627" target="_blank" rel="noopener" title="ВКонтакте">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://www.avito.ru/brands/7bbd0d591cdbe6ed0c6bbd0128ad464f?src=sharing" target="_blank" rel="noopener" class="avito-btn" title="Авито">
+                            <i class="fas fa-bullhorn"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-contact__map" id="map">
+        <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=73.364736%2C54.973114&z=16&pt=73.364736,54.973114"
+                width="100%"
+                height="450"
+                allowfullscreen="allowfullscreen"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                style="border: 0; border-radius: var(--radius-xl);">
+        </iframe>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-list">
+            <div class="footer-left">
+                <a class="footer-logo" href="/">
+                    <span class="logo-text">Жесть<span>&</span>Лак</span>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact__title">Свяжитесь с нами</div>
+                <a class="footer-contact__phone" href="tel:+79047915220" data-contact-modal>+7 (904) <b>791-52-20</b></a>
+                <button class="footer-contact__btn btn" data-contact-modal>Заказать звонок</button>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu__title">Меню</div>
+                <nav class="footer-menu__nav">
+                    <ul>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#gallery">Работы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-pays">
+                <div class="footer-pays__title">Мы принимаем</div>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-ruble-sign"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__list">
+                <div class="footer-copy">© 2026 Жесть и Лак. Кузовной центр</div>
+                <div class="footer-dev">Ремонт автомобилей любой сложности</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Модальное окно заказа звонка -->
+<div class="modal" id="formModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-list">
+        <div class="modal-container">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-title">Заказать звонок</div>
+            <form class="modal-form" id="modalForm">
+                <div class="consultation-item">
+                    <label>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </label>
+                    <i class="fas fa-user consultation-item__icon"></i>
+                </div>
+                <div class="consultation-item">
+                    <label>
+                        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                    </label>
+                    <i class="fas fa-phone consultation-item__icon"></i>
+                </div>
+                <button type="submit" class="btn modal-form__btn"><span>Заказать звонок</span></button>
+                <div class="modal-form__policy">Нажимая на кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 🔥 Модальное окно контактов -->
+<div class="contact-modal" id="contactModal">
+    <div class="contact-modal-overlay"></div>
+    <div class="contact-modal-container">
+        <button class="contact-modal-close" id="contactModalClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="contact-modal-header">
+            <i class="fas fa-headset"></i>
+            <h3>Свяжитесь с нами</h3>
+        </div>
+        <div class="contact-modal-body">
+            <div class="contact-option">
+                <div class="contact-option-label">Запись</div>
+                <a href="tel:+79047915220" class="contact-option-phone">
+                    +7 (904) 791-52-20
+                    <i class="fab fa-whatsapp whatsapp-icon"></i>
+                </a>
+            </div>
+            <div class="contact-option">
+                <div class="contact-option-label">Консультация</div>
+                <a href="tel:+79047915220" class="contact-option-phone">
+                    +7 (904) 791-52-20
+                </a>
+            </div>
+            <div class="contact-option">
+                <div class="contact-option-label">Электронная почта</div>
+                <a href="mailto:olgaivanova1310@yandex.ru" class="contact-option-email">
+                    olgaivanova1310@yandex.ru
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="contact-messengers">
+                <a href="https://wa.me/79047915220" target="_blank" rel="noopener" class="messenger-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://t.me/Abramo180" target="_blank" rel="noopener" class="messenger-btn telegram">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://vk.ru/id698782627" target="_blank" rel="noopener" class="messenger-btn vk">
+                    <i class="fab fa-vk"></i>
+                    <span>ВКонтакте</span>
+                </a>
+            </div>
+        </div>
+        <div class="contact-modal-footer">
+            <a href="#booking" class="contact-modal-btn" id="contactModalBooking">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Записаться в сервис</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Кнопка Наверх -->
+<div class="scroll-top" id="scrollTopBtn"><i class="fas fa-arrow-up"></i></div>
+
+<!-- Чат-бот -->
+<div class="chatbot" id="chatbot">
+    <div class="chatbot-header">
+        <i class="fas fa-comments"></i>
+        <span>Онлайн-помощник</span>
+        <i class="fas fa-times close-chat"></i>
+    </div>
+    <div class="chatbot-body" id="chatbotBody">
+        <div class="chat-message bot"><p>Здравствуйте! Чем могу помочь?</p></div>
+        <div class="chat-options">
+            <button data-chat-message="Узнать цену">💰 Узнать цену</button>
+            <button data-chat-message="Записаться">📅 Записаться</button>
+            <button data-chat-message="Адрес">📍 Адрес</button>
+            <button data-chat-message="Связаться с менеджером">📞 Менеджер</button>
+        </div>
+        <div id="chatInputWrapper" style="margin-top: 12px;">
+            <label for="chatInput"></label><input type="text" id="chatInput" placeholder="Введите сообщение..." style="width: 100%; padding: 12px 16px; border: 1px solid var(--gray-200); border-radius: var(--radius-md); font-size: 14px; font-family: inherit;">
+        </div>
+    </div>
+</div>
+<div class="chatbot-toggle" id="chatbotToggle"><i class="fas fa-comment-dots"></i></div>
+
+<!-- Лайтбокс -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="lightbox-caption"></div>
+</div>
+
+<!-- Cookie баннер -->
+<div class="cookie-banner" id="cookieBanner">
+    <p>Мы используем файлы cookie для улучшения работы сайта.</p>
+    <button class="btn" id="acceptCookiesBtn">Принять</button>
+</div>
+
+<!-- Скрипты -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
