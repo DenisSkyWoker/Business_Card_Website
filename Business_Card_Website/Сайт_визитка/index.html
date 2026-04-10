@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- === НАЧАЛО КОДА GOOGLE ANALYTICS === -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQ78781S05"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CQ78781S05');
+    </script>
+    <!-- === КОНЕЦ КОДА GOOGLE ANALYTICS === -->
+
+    <!-- ФАВИКОН (из папки images/favicon) -->
+    <link rel="icon" type="image/x-icon" href="bg-garage/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="bg-garage/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="bg-garage/favicon/apple-touch-icon.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Жесть и Лак — Кузовной ремонт и покраска авто</title>
@@ -14,15 +30,16 @@
 <!-- Мобильное меню -->
 <div class="mobile-menu">
     <div class="mobile-menu__container">
+        <div class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </div>
         <div class="mobile-menu__top">
             <div class="mobile-menu__text">Кузовной ремонт и покраска</div>
             <div class="mobile-menu__contact">
-                <a href="https://yandex.ru/maps/?ll=73.364736%2C54.973114&z=16" target="_blank" rel="noopener" class="header-item" title="Открыть карту">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p><b>г. Омск</b><br>ул. 3-я Островская, стр. 2А, корп. 5</p>
-                </a>
                 <div class="header-item">
-                    <i class="fas fa-clock"></i>
+                    <p><b>г.Омск</b><br>ул. 3-я Островская, стр. 2А, корп. 5</p>
+                </div>
+                <div class="header-item">
                     <p>Пн-Вс <b>10:00 - 20:00</b></p>
                 </div>
             </div>
@@ -31,18 +48,17 @@
         <div class="mobile-menu__bottom">
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#team">Команда</a></li>
-                    <li><a href="#gallery">Работы</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#services"><i class="fas fa-wrench"></i> Услуги</a></li>
+                    <li><a href="#team"><i class="fas fa-users"></i> Команда</a></li>
+                    <li><a href="#gallery"><i class="fas fa-images"></i> Работы</a></li>
+                    <li><a href="#reviews"><i class="fas fa-star"></i> Отзывы</a></li>
+                    <li><a href="#contacts"><i class="fas fa-envelope"></i> Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 </div>
+<div class="mobile-menu__overlay"></div>
 
 <!-- Шапка -->
 <header class="header">
@@ -65,15 +81,13 @@
                 <div class="header-top">
                     <div class="contact-group">
                         <a href="https://yandex.ru/maps/?ll=73.364736%2C54.973114&z=16" target="_blank" rel="noopener" class="contact-item" title="Открыть карту">
-                            <i class="fas fa-map-marker-alt"></i>
                             <div class="contact-text">
-                                <span class="contact-label">г. Омск</span>
+                                <span class="contact-label">г.Омск</span>
                                 <span class="contact-value">ул. 3-я Островская, стр. 2А, корп. 5</span>
                             </div>
                         </a>
                         <div class="contact-divider"></div>
                         <div class="contact-item">
-                            <i class="fas fa-clock"></i>
                             <div class="contact-text">
                                 <span class="contact-label">Режим работы</span>
                                 <span class="contact-value">Пн-Вс 10:00 - 20:00</span>
@@ -146,10 +160,6 @@
             <a class="main-btn btn" href="#booking">Записаться в СТО</a>
             <a class="main-btn btn-border" href="#services">Наши услуги</a>
         </div>
-    </div>
-    <div class="scroll-indicator">
-        <div class="mouse"><div class="wheel"></div></div>
-        <p>Листайте вниз</p>
     </div>
 </main>
 
@@ -506,7 +516,7 @@
                     <div class="home-contact__item-title">Адрес</div>
                     <div class="home-contact__item-text">
                         <a href="https://yandex.ru/maps/?ll=73.364736%2C54.973114&z=16" target="_blank" rel="noopener" title="Открыть карту">
-                            <b>г. Омск</b>, ул. 3-я Островская, стр. 2А, корп. 5
+                            <b>г.Омск</b>, ул. 3-я Островская, стр. 2А, корп. 5
                             <i class="fas fa-external-link-alt" style="margin-left: 8px; font-size: 0.8em; opacity: 0.6;"></i>
                         </a>
                     </div>

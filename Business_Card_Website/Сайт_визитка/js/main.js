@@ -3,31 +3,43 @@
 // =========================================
 document.addEventListener('DOMContentLoaded', () => {
 
-    // =========================================
-    // Мобильное меню
-    // =========================================
+// =========================================
+// Мобильное меню
+// =========================================
     const burgerBtn = document.querySelector('.header-burger');
     const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuClose = document.getElementById('mobileMenuClose'); // ✅ НОВАЯ ПЕРЕМЕННАЯ
     const burgerIcon = burgerBtn?.querySelector('.fa-bars');
     const closeIcon = burgerBtn?.querySelector('.fa-times');
 
+    function closeMobileMenu() {
+        if (mobileMenu) mobileMenu.classList.remove('active');
+        if (burgerBtn) burgerBtn.classList.remove('active');
+        if (burgerIcon) burgerIcon.style.display = 'block';
+        if (closeIcon) closeIcon.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
     if (burgerBtn && mobileMenu) {
+        // Открытие по бургеру
         burgerBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
             burgerBtn.classList.toggle('active');
+
             if (burgerIcon) burgerIcon.style.display = burgerIcon.style.display === 'none' ? 'block' : 'none';
             if (closeIcon) closeIcon.style.display = closeIcon.style.display === 'none' ? 'block' : 'none';
+
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         });
 
+        // ✅ Закрытие по крестику внутри меню
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', closeMobileMenu);
+        }
+
+        // Закрытие при клике на ссылку
         document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                burgerBtn.classList.remove('active');
-                if (burgerIcon) burgerIcon.style.display = 'block';
-                if (closeIcon) closeIcon.style.display = 'none';
-                document.body.style.overflow = '';
-            });
+            link.addEventListener('click', closeMobileMenu);
         });
     }
 
@@ -139,29 +151,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactModalBooking = document.getElementById('contactModalBooking');
     const contactModalTriggers = document.querySelectorAll('[data-contact-modal]');
 
-    if (contactModalTriggers.length > 0) {
-        contactModalTriggers.forEach(trigger => {
-            trigger.addEventListener('click', () => {
-                if (contactModal) {
-                    contactModal.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                }
-            });
+    // Открытие модального окна
+    contactModalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            contactModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         });
-    }
+    });
 
+    // Закрытие модального окна
     function closeContactModal() {
-        if (contactModal) {
-            contactModal.classList.remove('active');
-            document.body.style.overflow = '';
-        }
+        contactModal.classList.remove('active');
+        document.body.style.overflow = '';
     }
 
     if (contactModalClose) {
         contactModalClose.addEventListener('click', closeContactModal);
     }
 
-    if (contactModal && contactModal.querySelector('.contact-modal-overlay')) {
+    if (contactModal.querySelector('.contact-modal-overlay')) {
         contactModal.querySelector('.contact-modal-overlay').addEventListener('click', closeContactModal);
     }
 
@@ -171,8 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+// Закрытие по Escape
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && contactModal && contactModal.classList.contains('active')) {
+        if (e.key === 'Escape' && contactModal.classList.contains('active')) {
             closeContactModal();
         }
     });
